@@ -1,0 +1,127 @@
+
+@font-face {
+  font-family: "Digital7mono";
+  src: url("./assets/Digital7mono.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pixel";
+  src: url("./assets/Pixel.ttf") format("truetype");
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+button,
+button:hover,
+button:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  background: #bbb;
+  border-radius: 4px;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controlBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.topbar {
+  padding: 0;
+  flex-shrink: 3;
+  margin: 3px;
+  height: 30px;
+}
+
+.popButton {
+  padding: 2px 4px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.timer {
+  width: 32px;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: black;
+  color: red;
+  font-family: 'Digital7mono';
+  font-size: 22px;
+  text-align: center;
+}
+
+.board {
+  border: 1px solid #999;
+  display: grid;
+  width: fit-content;
+}
+
+.cell {
+  border: 1px solid #999;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-family: 'Pixel';
+  text-indent: 1px;
+  font-size: 18px;
+  font-weight: 800;
+  width: 20px;
+  height: 20px;
+}
+
+.cellCovered {
+  background-color: darkslategray;
+  cursor: pointer;
+}
+
+.icon {
+  width : 30px;
+  height : 30px;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputContainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 3px;
+}
+
+.paramInput {
+  width: 30px;
+}
