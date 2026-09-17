@@ -1,1 +1,1 @@
-A simple minewseeper implementation with a node server
+A simple minewseeper implementation with a server
